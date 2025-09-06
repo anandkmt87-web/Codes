@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{   int n,i,fterm=0,sterm=1,nextterm=0;
+    scanf("%d",&n);
+    printf("%d %d ",fterm,sterm);
+    for(i=2;i<n;i++){
+        nextterm=fterm+sterm;
+        printf("%d ",nextterm);
+        fterm=sterm;
+        sterm=nextterm;
+    }
+
+    return 0;
+}
